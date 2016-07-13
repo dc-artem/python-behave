@@ -2,7 +2,7 @@
 
 from selenium.webdriver.common.by import By
 from selenium import *
-from browser import Browser
+from features.browser import Browser
 import time
 import json
 import os.path
