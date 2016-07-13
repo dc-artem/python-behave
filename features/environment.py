@@ -1,5 +1,5 @@
 from selenium import webdriver
-from features.browser import Browser
+from browser import Browser
 from features.pages.home_page import HomePage
 from features.pages.search_results_page import SearchResultsPage
 from features.pages.profile import Profile
