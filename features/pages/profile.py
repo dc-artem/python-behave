@@ -39,7 +39,7 @@ class HomePageLocator(object):
 class Profile(Browser):
     # Home Page
 
-    with open('target.json','r', encoding='utf-8') as fh:
+    with open('target.json','r') as fh:
         data = json.load(fh)
 
     def testingemail(self, testemail):
