@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from selenium.webdriver.common.by import By
-from features.browser import Browser
+from browser import Browser
 import time
 
 class HomePageLocator(object):
