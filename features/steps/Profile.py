@@ -6,7 +6,7 @@ from nose.tools import assert_equal, assert_true
 @step('I navigate to the Delivery Club Home page and Login')
 def step_impl(context):
     context.home_page.navigate("https://delivery-club.ru")
-    assert_equal(context.home_page.get_page_title(), "«Delivery Club» — круглосуточная доставка из любимых ресторанов города")
+    assert_equal(context.home_page.get_page_title(), u"«Delivery Club» — круглосуточная доставка из любимых ресторанов города")
     context.home_page.login_main_page()
 
 
@@ -18,7 +18,7 @@ def go_to_edit_profile(context):
 
 
 
-@step('I edit "Имя", email and mailing flags and save change')
+@step('I edit "Name", email and mailing flags and save change')
 def edit_profile(context):
     context.profile.profile_email()
     context.profile.profile_mob_phone1()

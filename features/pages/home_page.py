@@ -50,7 +50,7 @@ class HomePage(Browser):
     def logout(self):
         wd = self.driver
         wd.find_element_by_css_selector("span.user-profile__span").click()
-        wd.find_element_by_xpath("//ul[@class='user-profile__list']//span[.='Выход']").click()
+        wd.find_element_by_xpath("//ul[@class='user-profile__list']//span[.=u'Выход']").click()
 
     def assert_balls(self):
         wd = self.driver

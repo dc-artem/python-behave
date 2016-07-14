@@ -15,6 +15,6 @@ Feature: Search
    Scenario: Edit Profile
      Given I navigate to the Delivery Club Home page and Login
      When I go to Profile and click Edit
-      And I edit "Имя", email and mailing flags and save change
+      And I edit "Name", email and mailing flags and save change
 #     Then I see that the changes are preserved
      And I logout

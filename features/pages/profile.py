@@ -17,7 +17,7 @@ target = None
 #             target = json.load(f)
 #     return target
 
-with open('target.json','r', encoding='latin1') as fh:
+with open('target.json','r', encoding='urf-8') as fh:
     data = json.load(fh)
 
 name = data['name']

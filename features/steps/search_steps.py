@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 @step('I navigate to the Delivery Club Home page')
 def step_impl(context):
     context.home_page.navigate("https://delivery-club.ru")
-    assert_equal(context.home_page.get_page_title(), "«Delivery Club» — круглосуточная доставка из любимых ресторанов города")
+    assert_equal(context.home_page.get_page_title(), "u«Delivery Club» — круглосуточная доставка из любимых ресторанов города")
 
 
 @step('I Login in Home Page')
