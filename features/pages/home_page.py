@@ -38,7 +38,7 @@ class HomePage(Browser):
 
     def login_main_page(self, username="atom2k@gmail.com1", password="111111"):
         wd = self.driver
-        wd.find_element_by_link_text("Вход / Регистрация").click()
+        wd.find_element_by_css_selector("a.login__a").click()
         wd.find_element_by_name("c_l").click()
         wd.find_element_by_name("c_l").clear()
         wd.find_element_by_name("c_l").send_keys(username)
@@ -50,7 +50,7 @@ class HomePage(Browser):
     def logout(self):
         wd = self.driver
         wd.find_element_by_css_selector("span.user-profile__span").click()
-        wd.find_element_by_xpath("//ul[@class='user-profile__list']//span[.='Выход']").click()
+        wd.find_element_by_css_selector("li.user-profile__item.logout > a.user-profile__a").click()
 
     def assert_balls(self):
         wd = self.driver
